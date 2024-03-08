@@ -6,18 +6,19 @@ export default function BlogPosts() {
   // o useState aqui inicia a variável como um array
   const [posts, setPosts] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     const fetchPosts = async () => {
-        try{
-            const resposta = await fetch('https://jsonplaceholder.typicode.com/posts');
-            const data = await resposta.json(); 
-            setPosts(data);
-        } catch()
-    }
-
-    
-
-  })
+      try {
+        const resposta = await fetch(
+          "https://jsonplaceholder.typicode.com/posts"
+        );
+        const data = await resposta.json();
+        setPosts(data);
+      } catch (e) {
+        console.log(g);
+      }
+    };
+  });
 
   return (
     <div>

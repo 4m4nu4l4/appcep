@@ -1,11 +1,13 @@
-import BuscaCep from "./components/BuscaCep";
-import MudarTema from "./components/MudarTema";
-import './config/scss/style.scss'
-export default function App() {
+import { Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
+
+
+function App() {
   return (
-    <div>
-      <MudarTema />
-      <BuscaCep />
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
+
+export default App;
