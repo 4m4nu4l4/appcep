@@ -1,13 +1,5 @@
-import { Router } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
-
-
-function App() {
-  return (
-    <Router>
-      <AppRoutes />
-    </Router>
-  );
+import "bootstrap/dist/css/bootstrap.min.css";
+export default function App() {
+  return <AppRoutes />;
 }
-
-export default App;
