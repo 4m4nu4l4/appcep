@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Inicial from "../pages/Inicial";
-import Sobre from "../pages/Sobre";
-import Contato from "../pages/Contato";
-import Body from "../layout/Body";
+import Body from "../Layout/Body";
+import Inicial from "../pages/InicialScreen";
+import Sobre from "../pages/SobreScreen";
+import Contato from "../pages/ContatoScreen";
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter> {/* responsável por englobar o app em navegação */}
-      <Routes> {/* responsável pelas rotas */}
+    <BrowserRouter>
+      {/* responsável por englobar o app em navegação */}
+      <Routes>
+        {/* responsável pelas rotas */}
         <Route path="/" element={<Body />}>
           <Route path="/" element={<Inicial />} />
           <Route path="/sobre" element={<Sobre />} />
